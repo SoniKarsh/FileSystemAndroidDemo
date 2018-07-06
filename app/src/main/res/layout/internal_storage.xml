@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="10dp"
+	tools:context="com.karshsoni.filesystemdemo.displayscreens.storageoptions.InternalStorageDemo">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/etFileName"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="fileName"/>
+
+		<EditText
+			android:id="@+id/etMessage"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="Your Message"/>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="saveToInternalStorage"
+		android:text="Save Data to the File"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="moveToDisplayScreen"
+		android:text="Go To Display Activity"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="70dp"
+		android:onClick="showInternalStoragePath"
+		android:text="Internal Storage Path"/>
+
+	<TextView
+		android:id="@+id/txvInternalStoragePath"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:text="Path of Internal Storage"
+		android:textColor="@android:color/black"
+		android:textSize="15sp"
+		android:textStyle="italic"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:onClick="showFilesList"
+		android:text="Show List of App Private Files"/>
+
+	<TextView
+		android:id="@+id/txvFilesList"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:text="Name of Files"
+		android:textColor="@android:color/black"
+		android:textSize="15sp"
+		android:textStyle="italic"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="deleteFileByName"
+			android:text="Delete a File"/>
+
+		<EditText
+			android:id="@+id/etFileToDelete"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="File To Delete"/>
+
+	</LinearLayout>
+
+</LinearLayout>

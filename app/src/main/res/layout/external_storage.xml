@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="10dp"
+	tools:context="com.karshsoni.filesystemdemo.displayscreens.storageoptions.ExternalStorageDemo">
+
+	<EditText
+		android:id="@+id/etExternalPrivate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Your External Pvt Data"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="saveToExternalPrivate"
+		android:text="Save Data to External Private"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="loadFromExternalPrivate"
+		android:text="Load From External Private"/>
+
+	<TextView
+		android:id="@+id/txvExternalPrivate"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:textColor="@android:color/black"
+		android:text="file content"
+		android:layout_marginLeft="10dp"/>
+
+	<EditText
+		android:id="@+id/etExternalPublic"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Your External Public Data"
+		android:layout_marginTop="50dp"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="saveToExternalPublic"
+		android:text="Save Data to External Public"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="loadFromExternalPublic"
+		android:text="Load From External Public"/>
+
+	<TextView
+		android:id="@+id/txvExternalPublic"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:textColor="@android:color/black"
+		android:text="file content"
+		android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
